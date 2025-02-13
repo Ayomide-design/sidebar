@@ -23,7 +23,7 @@
     user-select: none;
 }
 .sidebar ul{
-    display: block;
+     display: block;
     height: 100%;
     width: 100%;
     line-height: 65px;
@@ -38,3 +38,17 @@
 ul Li:hover{
     padding-left: 40px;
 }
+@media(max-width: 601px){
+    .sidebar ul{
+        width: 100%;
+        background-color: brown;
+    }
+} 
+
+
+@media(min-width: 768px){
+    .sidebar ul{
+        width: 100%;
+        background-color: brown;
+    }
+} 
