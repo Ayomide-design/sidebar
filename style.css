@@ -1,5 +1,4 @@
 
-
 *{
     margin: 0;
     padding: 0;
@@ -38,17 +37,18 @@
 ul Li:hover{
     padding-left: 40px;
 }
-@media(max-width: 601px){
-    .sidebar ul{
-        width: 100%;
+@media(max-width:500px){
+    .sidebar{
+        position: fixed;
+        background-color: brown;
+    }
+}
+@media (orientation: landscape) and(min-width: 1025px){
+    .sidebar{
+        position: fixed;
         background-color: brown;
     }
 } 
+    
 
-
-@media(min-width: 768px){
-    .sidebar ul{
-        width: 100%;
-        background-color: brown;
-    }
-} 
+    
