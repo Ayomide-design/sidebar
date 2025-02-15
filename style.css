@@ -4,14 +4,14 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-
 }
 .sidebar{
     position: fixed;
     left: 0;
-    width: 250px;
-    height: 100%;
+    width: 100%;
+    height: 20vh;
     background-color: brown;
+    display: flex;
 }
 .sidebar header{
     font-size: 1.3rem;
@@ -22,33 +22,46 @@
     user-select: none;
 }
 .sidebar ul{
-     display: block;
-    height: 100%;
-    width: 100%;
-    line-height: 65px;
+     display: flex;
+    flex-direction: row;
+    align-items: center;
+
     font-size: 1.2em;
     /* cursor: pointer; */
     color: white;
     padding-left: 40px;
+    gap: 70px;
     box-sizing: border-box;
     border-top: 1px solid;
     transition: 4s;
 }
-ul Li:hover{
+ul li:hover{
     padding-left: 40px;
 }
-@media(max-width:500px){
+@media screen and (max-width: 900px){
     .sidebar{
-        position: fixed;
-        background-color: brown;
+        flex-direction: column;
+        height: 100%;
     }
-}
-@media (orientation: landscape) and(min-width: 1025px){
-    .sidebar{
-        position: fixed;
-        background-color: brown;
+    .sidebar header{
+        font-size: 1.3rem;
+        text-align: center;
+        color: white;
+        background-color: grey;
+        user-select: none;
+    }
+    
+    .sidebar ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-right:78%;
+        justify-content: flex-start;
+        border-top: 1px solid;
+    }
+    ul li:hover{
+        padding-left: 40px;
     }
 } 
-    
 
     
