@@ -34,31 +34,37 @@
 ul li:hover{
     background-color: rgb(226, 81, 81);
 }
-@media screen and (max-width: 768px){
-    .sidebar{
+@media screen and (max-width: 768px) {
+    .sidebar {
         flex-direction: column;
         height: 100%;
+        align-items: center; 
+        padding: 20px 0; 
     }
-    .sidebar header{
-        display: flex;
-        justify-content: center;
+    .sidebar header {
+        text-align: center;
+        width: 100%;
         font-size: 1.3rem;
         color: white;
         background-color: grey;
         user-select: none;
+        padding: 10px 0;
+        margin-bottom: 25px;
     }
     
-    .sidebar ul{
+    .sidebar ul {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding-right:78%;
+        align-items: center;
+        gap: 60px;
+    }
+    ul li {
+        width: 100%;
         justify-content: flex-start;
-        gap: 65px;
     }
-    ul li:hover{
-        padding-left: 40px;
+    ul li:hover {
+        transform: translateX(10px);
+        transition: transform 0.3s ease-in-out;
     }
-} 
-
-    
+}
