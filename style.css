@@ -34,14 +34,15 @@
 ul li:hover{
     background-color: rgb(226, 81, 81);
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 768px){
     .sidebar{
         flex-direction: column;
         height: 100%;
     }
     .sidebar header{
+        display: flex;
+        justify-content: center;
         font-size: 1.3rem;
-        text-align: center;
         color: white;
         background-color: grey;
         user-select: none;
